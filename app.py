@@ -50,11 +50,11 @@ scaler = load_scaler()
 col1, col2 = st.columns(2)
 
 with col1:
-    AT = st.number_input("🌡️ Ambient Temperature (AT) °C", min_value=0.0,  max_value=50.0,  value=20.0, step=0.1)
-    V  = st.number_input("💨 Exhaust Vacuum (V) cm Hg",    min_value=25.0, max_value=82.0,  value=50.0, step=0.1)
+    AT = st.number_input("🌡️ Ambient Temperature (AT) °C", min_value=0.0,  max_value=100.0,  value=20.0, step=0.1)
+    V  = st.number_input("💨 Exhaust Vacuum (V) cm Hg",    min_value=25.0, max_value=200.0,  value=50.0, step=0.1)
 
 with col2:
-    AP = st.number_input("🔵 Ambient Pressure (AP) mbar",  min_value=990.0, max_value=1035.0, value=1010.0, step=0.1)
+    AP = st.number_input("🔵 Ambient Pressure (AP) mbar",  min_value=990.0, max_value=2035.0, value=1010.0, step=0.1)
     RH = st.number_input("💧 Relative Humidity (RH) %",    min_value=25.0, max_value=100.0,  value=70.0,  step=0.1)
 
 if st.button("🔮 Predict Power Output", use_container_width=True):
