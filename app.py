@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
-# ── Model Definition (must match your notebook exactly) ──────────────────────
+# ── Model Definition (must match your notebook exactly) ───────────────────
 class Powerplant(nn.Module):
     def __init__(self):
         super(Powerplant, self).__init__()
